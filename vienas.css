@@ -42,19 +42,6 @@ nav {
   }
   /* -------------- */
 
-html, body {
-    height: 100%;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: start;
-    padding: 10px;
-}
-
 /* Quick contacts */
 .header {
     background-color: rgb(255, 255, 255);
@@ -113,5 +100,67 @@ footer {
   .social-icons img {
     width: 20px; 
     height: 20px;
+  }
+  /* -------------- */
+
+  /* Night City Photo */
+  .container {
+    position: relative;
+  }
+  
+  .full-width-image {
+    width: 100%;
+    height: 650px;
+    display: block;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+  }
+  
+  .overlay-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17c465; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  /* -------------- */
+
+  /* Button to scroll to the top */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .scroll-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #28A745; 
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scroll-button:hover {
+    background-color: #218838; 
   }
   /* -------------- */
