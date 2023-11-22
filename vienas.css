@@ -4,70 +4,92 @@ body {
     margin: 0;
     padding: 0;
 }
-/* Navigacijos meniu */
+/* Navigation */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white; 
-    padding: 10px;
-    height: 30px; 
-  }
-  
-  .logo {
-    color: green;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0;
-    margin-right: 300px;
-    margin-left: 300px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-right: 300px;
-    margin-left: 300px;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-  }
-  /* -------------- */
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; 
+  padding: 10px;
+  height: 30px; 
+  transition: height 0.3s;
+  z-index: 1000;
+  width: 100%; 
+}
+
+.nav-container {
+  background-color: white;
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container.fixed {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: green;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* -------------- */
 
 /* Quick contacts */
 .header {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .contact-info {
-    display: flex;
-    align-items: center;
-    margin-right: 290px;
-    margin-left: 290px;
-  }
-  
-  .email,
-  .phone {
-    margin-right: 20px;
-    position: relative;
-    display: flex; 
-    align-items: center;
-    font-size: 16px;
-  }
-  
-  .email::before,
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+}
+
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-right: 290px;
+  margin-left: 290px;
+}
+
+.email,
+.phone {
+  margin-right: 20px;
+  position: relative;
+  display: flex; 
+  align-items: center;
+  font-size: 16px;
+}
+
+.email::before,
 .phone::before {
   content: "";
   width: 25px;
@@ -87,20 +109,20 @@ nav {
   background-size: cover;
 }
 
-  .social-icons {
-    display: flex;
-    margin-right: 300px;
-    margin-left: 300px;
-  }
-  
-  .social-icons a {
-    margin-right: 20px;
-  }
-  
-  .social-icons img {
-    width: 20px; 
-    height: 20px;
-  }
+.social-icons {
+  display: flex;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.social-icons a {
+  margin-right: 20px;
+}
+
+.social-icons img {
+  width: 20px; 
+  height: 20px;
+}
   /* -------------- */
 
   /* Night City Photo */
@@ -162,5 +184,22 @@ nav {
   
   .scroll-button:hover {
     background-color: #218838; 
+  }
+  /* -------------- */
+
+  /* Main section */
+  #about {
+    text-align: center; 
+    margin: 50px auto; 
+  }
+  
+  #resume {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  #contact {
+    text-align: center;
+    margin: 50px auto;
   }
   /* -------------- */
