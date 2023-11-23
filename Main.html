@@ -6,6 +6,7 @@
     <title>Home</title>
 
     <link rel="stylesheet" type="text/css" href="vienas.css">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
     <script src="coffescript.js"></script>
 </head>
 <body>
@@ -75,7 +76,6 @@
     referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 
-
     <!-- Bottom section -->
     <div class="page-end">
       <p class="green-text">GREEN</p>
@@ -87,12 +87,18 @@
       </div>
       <p>&copy Copyright VILNIUS TECH. All Rights Reserved</p>
       <p>Designed by Dmitrijs Popovs</p>
+      <print href="#" onclick="printPage()">Spausdinti</print>
     </div>
     
-
     <!-- Button to scroll to the top -->
     <div class="scroll-to-top">
         <a href="#" class="scroll-button" id="scrollButton">&#9650;</a>
     </div>    
+
+    <script>
+      function printPage() {
+        window.print(); 
+      }
+    </script>
 </body>
 </html>

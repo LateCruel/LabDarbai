@@ -274,6 +274,26 @@ nav ul li a {
     margin: 75px auto;
   }
   /* ------------- */
+
+  /*     Print     */
+  print {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: green; 
+    border: none;
+    border-radius: 5px; 
+  }
+
+  print:hover {
+    background-color: red;
+  }
+  /* ------------- */
   
   
   
