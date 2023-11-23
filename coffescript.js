@@ -30,9 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var targetSection = document.getElementById(sectionId);
   
     if (targetSection) {
-      event.preventDefault(); 
+      event.preventDefault();
+      var offset = 75; 
       window.scrollTo({
-        top: targetSection.offsetTop,
+        top: targetSection.offsetTop - offset,
         behavior: 'smooth'
       });
     }
