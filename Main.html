@@ -3,41 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mano Puslapis</title>
+    <title>Home</title>
 
     <link rel="stylesheet" type="text/css" href="vienas.css">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <script src="coffescript.js"></script>
 </head>
 <body>
+    <!-- Quick contacts -->
+    <div class="header">
+        <div class="contact-info">
+          <span class="email">vardas.pavarde@stud.vilniustech.lt</span>
+          <span class="phone">+3701234567</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://twitter.com/Markzukerberg" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="https://facebook.com/zuck" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="https://instagram.com/zuck" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </div>
     <!-- Navigacijos meniu -->
-    <nav>
-        <ul>
-            <li><a href="Main.html">Pradžia</a></li>
-            <li><a href="apie.html">Apie</a></li>
-            <li><a href="faktai.html">Faktai</a></li>
-            <li><a href="igudziai.html">Įgūdžiai</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1>Sveiki atvykę į mano puslapį!</h1>
-    </header>
-
-    <section>
-        <p>Šis puslapis yra labai paprastas, bet jūs galite pridėti daugiau turinio čia.</p>
-    </section>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=WyU38vWmfS1onLu7" frameborder="0" allowfullscreen></iframe>
-
-
-
-
+    <div class="nav-container">
+        <nav>
+          <p class="logo">GREEN</p>
+          <ul>
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'about')">About</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'resume')">Resume</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'contact')">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+      
+    <!-- Night City Photo -->
+    <div class="container">
+        <img src="night.jpg" alt="Your Image" class="full-width-image">
+        <div class="overlay-content">
+          <h1>Welcome to my CV</h1>
+          <a href="apie.html" class="button">More Information</a>
+        </div>
+    </div>
 
 
+    <main>
+        <!-- "About" -->
+        <section id="about">
+          <h2>ABOUT ME</h2>
+          <hr class="divider">
+          <p>Text</p>
+        </section>
+        
+        <!-- "Resume" -->
+        <section id="resume">
+          <h2>MY RESUME</h2>
+          <hr class="divider">
+          <p>Text</p>
+        </section>
+    
+        <!-- "Contact" -->
+        <section id="contact">
+          <h2>CONTACT ME</h2>
+          <hr class="divider">
+          <p>Text</p>
+        </section>
+    </main>
 
+    <!-- Map -->
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.2776367443626!2d25.33702326953212!3d54.72233111229639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96e86a61f053%3A0xd4bb20eab67f9bf9!2sVilnius%20Gediminas%20Technical%20University%20(VILNIUS%20TECH)!5e0!3m2!1sru!2s!4v1700775065165!5m2!1sru!2s" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
-    <footer>
-        <p>&copy; 2023 Mano Puslapis</p>
-    </footer>
-   
+    <!-- Bottom section -->
+    <div class="page-end">
+      <p class="green-text">GREEN</p>
+      <p class="normal-text">Text</p>
+      <div class="social-icons-bottom">
+        <a href="https://twitter.com/Markzukerberg" target="_blank" class="icon1"><img src="twitter-icon-bottom.png" alt="Twitter"></a>
+        <a href="https://facebook.com/zuck" target="_blank" class="icon2"><img src="facebook-icon-bottom.png" alt="Facebook"></a>
+        <a href="https://instagram.com/zuck" target="_blank" class="icon3"><img src="instagram-icon-bottom.png" alt="Instagram"></a>
+      </div>
+      <p>&copy Copyright VILNIUS TECH. All Rights Reserved</p>
+      <p>Designed by Dmitrijs Popovs</p>
+      <print href="#" onclick="printPage()">Spausdinti</print>
+    </div>
+    
+    <!-- Button to scroll to the top -->
+    <div class="scroll-to-top">
+        <a href="#" class="scroll-button" id="scrollButton">&#9650;</a>
+    </div>    
+
+    <script>
+      function printPage() {
+        window.print(); 
+      }
+    </script>
 </body>
 </html>
