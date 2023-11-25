@@ -183,19 +183,109 @@ nav ul li a {
   /* -------------- */
 
   /* Main section */
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .center-text {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 31px;
+    color: rgb(77, 77, 77);
+  }
+
+  .center-text-smaller {
+    margin-bottom: 20px;
+    font-size: 19px;
+    color: rgb(155, 154, 154);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+  }
+
+  .divider-container {
+    position: relative;
+    width: 20%;
+    margin-bottom: 40px;
+    margin-right:  auto;
+    margin-left:  auto;
+  }
+  
+  .green-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3px;
+    width: 12%; 
+    background-color: green;
+    z-index: 10;
+    border-radius: 8px;
+  }
+  
+  .divider-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 36%; 
+    background-color: rgb(184, 184, 184);
+    z-index: 9;
+    border-radius: 8px;
+  }
+
   #about {
-    text-align: center; 
-    margin: 50px auto; 
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text {
+    text-align: left;
+    margin-right: 20px;
+    max-width: 600px;
+    overflow-wrap: break-word;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .text-heading {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(77, 77, 77);
+  }
+
+  .text-main-about {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: rgb(77, 77, 77);
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 40px;
   }
   
   #resume {
     text-align: center;
     margin: 50px auto;
+    align-items: center;
   }
   
   #contact {
     text-align: center;
     margin: 50px auto;
+    align-items: center;
   }
   /* -------------- */
 
