@@ -291,7 +291,7 @@ nav ul li a {
   .contact-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* отступ между контейнерами */
+    margin-top: 20px;
   } 
 
   .left-container {
