@@ -94,7 +94,7 @@ nav ul li a {
 }
 
 .email::before {
-  background-image: url('letter-icon.jpg');
+  background-image: url('letter333-icon.jpg');
   background-size: cover;
 }
 
@@ -287,6 +287,170 @@ nav ul li a {
     margin: 50px auto;
     align-items: center;
   }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* отступ между контейнерами */
+  } 
+
+  .left-container {
+    width: 550px;
+    text-align: left;
+    margin-left: 250px;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .location-content {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    width: 470px;
+  }
+
+  .location-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #e1f5ca;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 10px; 
+    transition: background-color 0.9s;
+  }
+
+  .location-marker img {
+      width: 40%;
+      height: auto;
+  }
+
+  .location-marker::before {
+    content: url('marker-icon.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .location-content:hover .location-marker {
+    background-color: green;
+  }
+
+  .location-content:hover .location-marker::before, .location-content:hover .location-marker img {
+    content: url('marker-icon-light.png');
+  }
+
+  .letter-content {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    width: 470px;
+  }
+
+  .letter-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #e1f5ca; 
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transition: background-color 0.9s;
+  }
+
+  .letter-marker img {
+    width: 50%;
+    height: auto;
+  }
+
+  .letter-marker::before {
+    content: url('email-icon.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .letter-content:hover .letter-marker {
+    background-color: green;
+  }
+
+  .letter-content:hover .letter-marker::before, .letter-content:hover .letter-marker img {
+    content: url('email-icon-light.png');
+  }
+
+  .call-content {
+    display: flex;
+    align-items: center; 
+    margin-left: 40px;
+    width: 470px;
+  }
+
+  .call-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #e1f5ca;
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    overflow: hidden; 
+    transition: background-color 0.9s;
+  }
+
+  .call-marker img {
+    width: 50%; 
+    height: auto; 
+  }
+
+  .call-marker::before {
+    content: url('call-icon.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .call-content:hover .call-marker {
+    background-color: green;
+  }
+
+  .call-content:hover .call-marker::before, .call-content:hover .call-marker img {
+    content: url('call-icon-light.png');
+  }
+
+
+  .large-bold {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .small {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .right-container {
+    width: 1000px;
+    text-align: center;
+    margin-left: 20px;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  }
   /* -------------- */
 
   /* Bottom section */
@@ -361,7 +525,12 @@ nav ul li a {
   /*      Map      */
   iframe {
     display: block;
-    margin: 75px auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 280px;
   }
   /* ------------- */
 
