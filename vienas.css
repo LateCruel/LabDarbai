@@ -196,7 +196,8 @@ nav ul li a {
   }
 
   .center-text-smaller {
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
     font-size: 19px;
     color: rgb(155, 154, 154);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -297,7 +298,7 @@ nav ul li a {
   .left-container {
     width: 550px;
     text-align: left;
-    margin-left: 250px;
+    margin-left: 270px;
     border-top: 3px solid green;
     border-bottom: 3px solid green;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
@@ -444,12 +445,90 @@ nav ul li a {
   }
 
   .right-container {
-    width: 1000px;
-    text-align: center;
-    margin-left: 20px;
+    width: 750px;
+    text-align: left;
+    align-items: center;
+    margin-right: 270px;
     border-top: 3px solid green;
     border-bottom: 3px solid green;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+  }
+
+  .label-input-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 120%;
+  }
+
+  .input-row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+  }
+
+  .ending-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-size: 120%;
+  }
+
+  #name,
+  #email{
+    width: 318px;
+    max-width: 100%;
+    padding: 8px;
+    margin-bottom: 32px;
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 4px;
+  }
+  
+  #subject {
+    width: 93%;
+    max-width: 93%;
+    padding: 8px;
+    margin-bottom: 32px;
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  #message {
+    width: 93%;
+    max-width: 93%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    height: 220px;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    width: 22%;
+    margin-left: 290px;
+    margin-bottom: 24px;
+    font-size: 110%;
+  }
+
+  button:hover {
+    background-color: #69b66c; 
   }
   /* -------------- */
 
