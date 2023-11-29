@@ -242,7 +242,7 @@ nav ul li a:hover {
 /* About */
   #about {
     background-color: #fff;
-    margin: 50px auto;
+    margin: 75px auto;
     padding: 20px;
     width: 70%;
   }
@@ -285,15 +285,64 @@ nav ul li a:hover {
   /* Resume */
   #resume {
     text-align: center;
-    margin: 50px auto;
+    margin: 75px auto;
     align-items: center;
   }
+
+  .main-container-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container-resume {
+    box-sizing: border-box;
+    width: calc(33.3333% - 1px);
+    height: 250px;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .number {
+    color: green;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .resume-heading {
+    color: black;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .resume-text {
+    color: rgb(155, 154, 154);
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    box-sizing: border-box;
+  }
+
+  .container-resume:not(.no-right-border) {
+    border-right: 1px solid #ccc;
+  }
+
   /* ------ */
   
   /* Contact */
   #contact {
     text-align: center;
-    margin: 50px auto;
+    margin: 75px auto;
     align-items: center;
   }
 
@@ -646,6 +695,3 @@ nav ul li a:hover {
     background-color: red;
   }
   /* ------------- */
-  
-  
-  
